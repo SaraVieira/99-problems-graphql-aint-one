@@ -7,6 +7,11 @@ import { Head } from 'mdx-deck'
 import { Image } from 'mdx-deck'
 import IMG from './components/bg-image'
 
+
+<Head>
+  <title>I got 99 problems but GraphQL ain't one</title>
+</Head>
+
 <IMG src={require("file-loader!./images/jay-z.jpeg")}/>
 
 # I got 99 problems but GraphQL ain't one
@@ -138,13 +143,12 @@ export default Split
 - Swift
 - OCaml
 - SQL
-- Elm
 
 
 - R
+- Elm
 - Julia
 - Kotlin
-- Unity
 - Crystal
 - Go
 
@@ -193,6 +197,116 @@ export default Layout
 # [Open on CodeSanbox](https://mq61mzo28p.codesandbox.io/)
 
 ---
+export default Layout
+
+# The Frontend is Love
+
+---
+export default Layout
+
+Tools like Apollo handle all the loading and error states for you.
+
+---
+export default Layout
+
+Also the Caching. And we hate caching.
+
+---
+
+export default Layout
+
+# All The Frameworks
+
+---
+
+```jsx
+  <Query query={query}>
+    {({ loading, error, data }) => {
+      if (loading) return 'Loading...';
+      if (error) return `Error! ${error.message}`;
+
+      return (
+        {data.dogs.map(dog => (
+          <li key={dog.id} value={dog.breed}>
+            {dog.breed}
+          </li>
+        ))}
+      );
+    }}
+  </Query>
+```
+---
+
+```html
+<ApolloQuery :query="require('../graphql/query.gql')">
+  <template slot-scope="{ result: { loading, error, data } }">
+    <div v-if="loading" class="loading apollo">Loading...</div>
+
+    <div v-else-if="error" class="error apollo">An error occured</div>
+
+    <div v-else-if="data" class="result apollo">{{ data.hello }}</div>
+
+    <div v-else class="no-result apollo">No result :(</div>
+  </template>
+</ApolloQuery>
+```
+
+---
+
+```js
+class ProfileComponent implements OnInit {
+  loading: boolean;
+  currentUser: any;
+
+  private querySubscription: Subscription;
+
+  constructor(private apollo: Apollo) {}
+
+  ngOnInit() {
+    this.querySubscription = this.apollo.watchQuery<any>({ query: Query})
+    .valueChanges.subscribe(({ data, loading }) => {
+        this.loading = loading;
+        this.currentUser = data.currentUser;
+    });
+  }
+}
+```
+---
+export default Layout
+
+# There is no limit to what you can build
+
+
+---
+export default LayoutNoFooter
+
+# Apollo Link State
+
+<IMG src={require("file-loader!./images/link-state.png")}/>
+
+---
+export default LayoutNoFooter
+
+# GraphQL CSS
+
+<IMG src={require("file-loader!./images/css.png")}/>
+
+---
+
+export default Layout
+
+# Ready to learn ?
+
+---
+
+export default LayoutNoFooter
+
+## [https://letslearngraphql.com](https://letslearngraphql.com)
+
+<IMG src={require("file-loader!./images/lets.png")}/>
+
+---
+
 export default LayoutNoFooter
 
 <IMG src={require("file-loader!./images/yay.jpg")}/>
