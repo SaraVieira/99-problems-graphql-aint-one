@@ -1,14 +1,13 @@
 export { default as theme } from './theme'
 import Layout from './components/layout'
+import LayoutNoFooter from './components/layout-no-footer'
 import CodeSanbox from './components/codeSanbox'
-import { Split } from 'mdx-deck/layouts'
+import Split from './components/Split'
 import { Head } from 'mdx-deck'
 import { Image } from 'mdx-deck'
 import IMG from './components/bg-image'
 
-export default Layout
-
-<IMG src="/images/jay-z.jpeg"/>
+<IMG src={require("file-loader!./images/jay-z.jpeg")}/>
 
 # I got 99 problems but GraphQL ain't one
 
@@ -21,8 +20,7 @@ export default Layout
 
 export default Split
 
-
-![love graphql](/images/me.jpg)
+<img src={require("file-loader!./images/me.jpg")}/>
 
 # GraphQL is Bae
 
@@ -36,8 +34,8 @@ export default Layout
 
 export default Split
 
+<img src={require("file-loader!./images/yld.gif")}/>
 
-![YLD](/images/yld.gif)
 
 * Developer Advocate at YLD
 * Really into shitty movies
@@ -51,7 +49,7 @@ export default Layout
 
 ---
 
-<Image src="/images/graphql.png" />
+<Image src={require("file-loader!./images/graphql.png")} />
 
 ---
 export default Layout
@@ -127,7 +125,7 @@ export default Split
 - Erlang
 - Elixir
 - Haskell
-- SQL
+- Rust
 - Lua
 
 ---
@@ -139,7 +137,7 @@ export default Split
 - ClojureScript
 - Swift
 - OCaml
-- Rust
+- SQL
 - Elm
 
 
@@ -171,14 +169,14 @@ export default Layout
 # UI Editors
 
 ---
-export default Layout
+export default LayoutNoFooter
 
 # GraphQL Playground
 
 <IMG src="https://camo.githubusercontent.com/1a26385e3543849c561cfafd0c25de791a635570/68747470733a2f2f692e696d6775722e636f6d2f41453557364f572e706e67" />
 
 ---
-export default Layout
+export default LayoutNoFooter
 
 # GraphiQL
 
@@ -195,3 +193,10 @@ export default Layout
 # [Open on CodeSanbox](https://mq61mzo28p.codesandbox.io/)
 
 ---
+export default LayoutNoFooter
+
+<IMG src={require("file-loader!./images/yay.jpg")}/>
+
+# Thank You 🇺🇦
+### [https://99-problems-graphql-aint-one.now.sh/](https://99-problems-graphql-aint-one.now.sh/)
+

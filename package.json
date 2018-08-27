@@ -7,9 +7,13 @@
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sara Vieira",
+  "now": {
+    "alias": "99-problems-graphql-aint-one"
+  },
+  "license": "MIT",
   "devDependencies": {
+    "file-loader": "^2.0.0",
     "mdx-deck": "^1.6.7"
   },
   "dependencies": {

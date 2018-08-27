@@ -13,6 +13,9 @@ export default {
   prism: {
     style: atomDark
   },
+  img: {
+    maxWidth: '100%'
+  },
   weights: 400,
   li: {
     paddingBottom: '20px',
@@ -20,12 +23,13 @@ export default {
   },
   ul: {
     listStyle: 'none',
-    paddingLeftt: '20px'
+    paddingLeft: '20px',
+    display: 'inline-block'
   },
   colors: {
     text: '#6AD798',
     background: '#161923',
-    link: '#0ff',
+    link: '#fff',
     pre: '#fff',
     preBackground: '#051626',
     code: '#fff',
