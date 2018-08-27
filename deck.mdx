@@ -1,0 +1,197 @@
+export { default as theme } from './theme'
+import Layout from './components/layout'
+import CodeSanbox from './components/codeSanbox'
+import { Split } from 'mdx-deck/layouts'
+import { Head } from 'mdx-deck'
+import { Image } from 'mdx-deck'
+import IMG from './components/bg-image'
+
+export default Layout
+
+<IMG src="/images/jay-z.jpeg"/>
+
+# I got 99 problems but GraphQL ain't one
+
+---
+export default Layout
+
+# I really love GraphQL
+
+---
+
+export default Split
+
+
+![love graphql](/images/me.jpg)
+
+# GraphQL is Bae
+
+
+---
+export default Layout
+
+# My name is Sara
+
+---
+
+export default Split
+
+
+![YLD](/images/yld.gif)
+
+* Developer Advocate at YLD
+* Really into shitty movies
+* Really into football
+* I have stickers
+
+---
+export default Layout
+
+# What is GraphQL?
+
+---
+
+<Image src="/images/graphql.png" />
+
+---
+export default Layout
+
+# A Query Language for your API
+
+---
+export default Layout
+
+# Why Should I Care ?
+
+---
+export default Layout
+
+# GraphQL APIs have a strongly typed schema
+
+```notes
+GraphQL uses Schema Definition Language to define your API and it requires you to set all types.
+
+There is no such thing as an object.
+```
+
+---
+export default Layout
+
+```js
+import gql from 'graphql-tag';
+
+const Schema = gql`
+  type Speaker {
+    id: ID!
+    name: String
+    photo: String
+    talks: [Talk]
+  }
+
+  type Talk {
+    name: String
+    speaker: Speaker
+  }
+`;
+```
+
+```notes
+In this case we are creating a schema that has Speaker and Talk and a speaker can have multiple talks but a talk can only have one speaker and all their fields are typed
+```
+
+---
+export default Layout
+
+# It's framework agnostic
+
+---
+export default Layout
+
+# And language too
+
+---
+
+export default Split
+
+- Javascript
+- Typescript
+- Ruby
+- PHP
+- Python
+- Java
+- C/C++
+
+
+- Perl
+- .NET
+- Erlang
+- Elixir
+- Haskell
+- SQL
+- Lua
+
+---
+
+export default Split
+
+- Scala
+- Clojure
+- ClojureScript
+- Swift
+- OCaml
+- Rust
+- Elm
+
+
+- R
+- Julia
+- Kotlin
+- Unity
+- Crystal
+- Go
+
+---
+export default Layout
+
+# You get the Point
+
+---
+export default Layout
+
+# Automatic Documentation
+
+---
+export default Layout
+
+Since you have to type all your API graphql uses that to create automatic documentation for your API
+
+---
+export default Layout
+
+# UI Editors
+
+---
+export default Layout
+
+# GraphQL Playground
+
+<IMG src="https://camo.githubusercontent.com/1a26385e3543849c561cfafd0c25de791a635570/68747470733a2f2f692e696d6775722e636f6d2f41453557364f572e706e67" />
+
+---
+export default Layout
+
+# GraphiQL
+
+<IMG src="https://github.com/graphql/graphiql/raw/master/resources/graphiql.png" />
+
+---
+export default Layout
+
+# You get what you asked for
+
+---
+export default Layout
+
+# [Open on CodeSanbox](https://mq61mzo28p.codesandbox.io/)
+
+---

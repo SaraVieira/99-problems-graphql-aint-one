@@ -1,0 +1,21 @@
+{
+  "name": "99-problems-graphql-aint-one",
+  "version": "1.0.0",
+  "description": "LvivJS Talk",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^1.6.7"
+  },
+  "dependencies": {
+    "grid-styled": "^5.0.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "styled-components": "^3.4.5"
+  }
+}
