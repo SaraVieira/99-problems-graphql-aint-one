@@ -13,11 +13,20 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
-    "mdx-deck": "^1.6.7"
+    "mdx-deck": "^1.6.9",
+    "style-loader": "^0.23.0",
+    "@babel/preset-react": "^7.0.0"
   },
   "dependencies": {
     "grid-styled": "^5.0.2",
+    "mdx-helpers-sara": "^1.0.3",
+    "npm": "^6.4.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "styled-components": "^3.4.5"
