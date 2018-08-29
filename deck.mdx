@@ -1,7 +1,7 @@
-export { default as theme } from 'mdx-helpers-sara'
+export { default as theme } from './src'
 import { Head, Image } from 'mdx-deck'
 
-import {Layout, LayoutNoFooter, CodeSanbox, Split, BGImage} from 'mdx-helpers-sara'
+import {Layout, LayoutNoFooter, CodeSanbox, Split, BGImage} from './src'
 
 
 
@@ -45,6 +45,14 @@ export default Split
 * I have stickers
 
 ---
+export default Layout
+
+## STICKERS
+
+<BGImage src={require("file-loader!./images/stickers.jpg")}/>
+
+---
+
 export default Layout
 
 # What is GraphQL?
