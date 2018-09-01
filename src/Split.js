@@ -46,7 +46,7 @@ const Split = ({ children }) => {
         ))}
       </Flex>
       <Footer>
-        <span>State of the Browser 2018 🇬🇧</span>
+        <span>LvivJS 🇺🇦</span>
         <span>@NIkkitaFTW</span>
       </Footer>
     </Root>
