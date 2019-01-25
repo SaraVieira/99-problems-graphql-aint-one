@@ -1607,9 +1607,10 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-code-surfer@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/code-surfer/-/code-surfer-0.3.0.tgz#c8e3c57108fe8d2bf4a021af7effdb3cc414e984"
+code-surfer@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/code-surfer/-/code-surfer-0.5.5.tgz#223c7177de6f3a645a4bdfc17515d524ad88e038"
+  integrity sha512-ZjGTuyC0hwq16C3WgUfOV6wJ4z5GQLBqN9enUaA0SuRDK//Z2f9BdQVVTyDh7O0/cJ0NRJsH9LJbrwVx+fruhA==
   dependencies:
     glamor "^2.20.40"
     prism-react-renderer "^0.1.3"
@@ -3773,11 +3774,13 @@ mdurl@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
 
-mdx-deck-code-surfer@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/mdx-deck-code-surfer/-/mdx-deck-code-surfer-0.4.0.tgz#a323792190a7d3d5547d67a3b30015e13e661144"
+mdx-deck-code-surfer@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/mdx-deck-code-surfer/-/mdx-deck-code-surfer-0.5.5.tgz#28fd2c2ea728ffdeac096228a9aa9d0643161cc2"
+  integrity sha512-yKhLue+xdnY6HqXbj/lFsO400h2EmPaaQ8hmuIiB29fG387jMiwDY8yGOlZIhJPFdJDRmmInSOXt6lhmVkk5uw==
   dependencies:
-    code-surfer "^0.3.0"
+    code-surfer "^0.5.5"
+    memoize-one "^4.0.2"
 
 mdx-deck@^1.7.0:
   version "1.7.1"
@@ -3845,6 +3848,11 @@ mem@^1.1.0:
   resolved "https://registry.yarnpkg.com/mem/-/mem-1.1.0.tgz#5edd52b485ca1d900fe64895505399a0dfa45f76"
   dependencies:
     mimic-fn "^1.0.0"
+
+memoize-one@^4.0.2:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-4.1.0.tgz#a2387c58c03fff27ca390c31b764a79addf3f906"
+  integrity sha512-2GApq0yI/b22J2j9rhbrAlsHb0Qcz+7yWxeLG8h+95sl1XPUgeLimQSOdur4Vw7cUhrBHwaUZxWFZueojqNRzA==
 
 memory-fs@^0.4.0, memory-fs@~0.4.1:
   version "0.4.1"
@@ -4997,6 +5005,14 @@ randomfill@^1.0.3:
 range-parser@^1.0.3:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
+
+raw-loader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-1.0.0.tgz#3f9889e73dadbda9a424bce79809b4133ad46405"
+  integrity sha512-Uqy5AqELpytJTRxYT4fhltcKPj0TyaEpzJDcGz7DFJi+pQOOi3GjR/DOdxTkTsF+NzhnldIoG6TORaBlInUuqA==
+  dependencies:
+    loader-utils "^1.1.0"
+    schema-utils "^1.0.0"
 
 rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
   version "1.2.8"
